@@ -3,7 +3,6 @@ import './App.css';
 
 import { useState } from "react";
 
-// xIsNext bool return , squares is an array of 9 elements
 export default function App() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -25,7 +24,7 @@ export default function App() {
     setSquares(nextSquares);
   }
   
-  const winner = calculateWinner(squares); // Pass the squares array
+  const winner = calculateWinner(squares);
   let status;
   if (winner) {
     status = "Winner: " + winner;
