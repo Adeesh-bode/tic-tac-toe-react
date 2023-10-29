@@ -1,0 +1,91 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+{
+    background-color: rgba(18, 17, 17, 0.982);
+}
+.App
+{   
+    height: 100vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 15px; */
+
+}
+.App h1{
+    color: burlywood;
+    font-size: 3rem;
+}
+.App span
+{
+    color: white;
+}
+.playarea
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    gap:15px;
+    
+    box-shadow: 1px 1px 10px white, -1px -1px 10px white;
+
+    padding: 15px;    
+}
+.area
+{
+    height: 300px;
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    cursor: pointer;
+
+
+}
+.square
+{
+    display: inline-block;
+    background-color: bisque;
+
+    height: 90px;
+    width: 90px;
+
+    border-radius: 8px;
+    font-size: 4.5vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.square:hover
+{
+    /* scale: 1.1; */
+    box-shadow: 3px 3px 2px white, -3px -3px 2px white;
+}
+.reset-btn
+{
+    padding: 8px;
+    background-color: black;
+    box-shadow: 3px 3px 1px white, -3px 3px 1px wheat;
+    color: bisque;
+    border-radius: 8px;
+    
+}
+.status
+{
+    color: bisque;
+    font-size: 1.8rem;
+}
